@@ -17,6 +17,21 @@
   }
 }
 
+.side-by-side-container {
+   display: flex;
+   flex-direction: row;
+   gap: 20px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: row;
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+
 .hero {
   position: relative;
 
