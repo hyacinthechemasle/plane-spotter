@@ -115,3 +115,41 @@ display: grid;
 grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 gap: 1rem;
 }
+
+/* Added Styles for nav links and sighting form*/
+.sighting-form {
+ display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+  background-color: #1a1a1a;
+  color: #fff;
+  border: 1px solid #333;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.brand,
+.nav-links {
+   display:flex;
+   gap: 1rem;
+}
+
+.nav-links a.active {
+   border-bottom: 2px solid white;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem;
+}
