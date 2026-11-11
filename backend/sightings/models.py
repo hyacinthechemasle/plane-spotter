@@ -4,8 +4,8 @@ from django.db import models
 
 class Sighting(models.Model):
     registration = models.CharField(max_length=6)
-    aircraft_photo = models.ImageField(upload_to="assets/images")
-    aircraft_type = models.CharField(max_length=10)
+    aircraft_photo = models.ImageField(upload_to="assets/images", blank=True)
+    aircraft_type = models.CharField(max_length=20)
     notes = models.TextField(blank=True)
     time_sighted = models.DateTimeField()
     created_at = models.DateTimeField(auto_now_add=True)
